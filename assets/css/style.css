@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "SanFrancisco";
+    src: url("../fonts/SanFrancisco/SanFranciscoText-Light.ttf") format("truetype");
+}
+html {
+    height: 100%;
+}
+body {
+    background: url('../images/background.jpg') fixed top left no-repeat;
+    background-size: 100% 100%;
+    min-height: 100%;
+    font-family: SanFrancisco;
+}
+.blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/background-blurred.jpg') fixed top left no-repeat;
+    background-size: 100% 100%;
+    filter: brightness(70%);
+}
+.calc {
+    width: 360px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -240px;
+    border:  1px solid darkslategray;
+    border-radius: 5px;
+    position: absolute;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5), 0 10px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.col-xs-3, .col-xs-6{
+    padding: 0;
+
+}
+.row .col-xs-3:last-child button {
+    background-color: orange;
+    color: white;
+    font-size: xx-large;
+}
+.row .col-xs-3:last-child button:active, .row .col-xs-3:last-child button.active {
+    background-color: darkorange;
+}
+
+
+.input {
+    font-size: xx-large;
+    display: block;
+    line-height: 25px;
+    padding-right: 3px;
+}
+
+.row:last-child div:first-child button {
+    border-bottom-left-radius: 5px;
+    text-align: left;
+    padding-left: 38px;
+}
+.row:last-child div:last-child button {
+    border-bottom-right-radius: 5px;
+}
+
+.calc-button {
+    height: 70px;
+    background-color: lightgrey;
+    width: 100%;
+    font-size: xx-large;
+    border: darkgray solid 1px;
+    text-align: center;
+}
+.calc-button:active {
+    background-color: darkgray;
+}
+
+.calc-button.active {
+    background-color: darkgray;
+}
+
+.close-left {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: rgba(254, 0, 0, 0.6);
+    border: none;
+    padding: 0 0 4px 1px;
+    border-radius: 10px;
+    line-height: 12px;
+    width: 16px;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.input-group {
+    height: 98px;
+    text-align: right;
+    width: 100%;
+    padding-top: 10px;
+    color: white;
+
+}
+
+input[type="text"] {
+    border: none;
+    background: none;
+    text-align: right;
+    font-size: x-large;
+
+}
+input:hover {
+    cursor: default;
+}
+input:active{
+    cursor: move;
+}
+.answer {
+    font-size: 50px;
+    line-height: 50px;
+    display: block;
+}
+.errors {
+    font-size: xx-small;
+    display: block;
+    min-height: 12px;
+    padding-right: 3px;
+}
+*:focus {
+    outline:  none;
+}
+.navbar {
+    opacity: 0.7;
+}
+.navbar-brand {
+    font-size: x-large;
+}
